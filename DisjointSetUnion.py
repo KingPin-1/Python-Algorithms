@@ -5,8 +5,8 @@ from typing import List
 
 class UnionFind:
     def __init__(self,n):
-        self.parent = [i for i in range(n)]
-        self.size = [1 for i in range(n)]
+        self.parent = [i for i in range(n+1)]
+        self.size = [1 for i in range(n+1)]
         
     def union(self,u,v):
         parent_u = self.find(u)
